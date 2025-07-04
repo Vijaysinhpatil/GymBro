@@ -14,7 +14,8 @@
 
 | Home Page | Signup Page | Dashboard |
 |-----------|-------------|-----------|
-| ![Home](https://your-screenshot-url) | ![Signup](https://your-screenshot-url) | ![Dashboard](https://your-screenshot-url) |
+| ![Home](![{1B9C92F4-2F9C-41B2-BD37-D414B815A9D9}](https://github.com/user-attachments/assets/786a064d-68e4-447d-b87c-f395fbb453ff)
+) | ![Signup](https://your-screenshot-url) | ![Dashboard](https://your-screenshot-url) |
 
 ---
 
