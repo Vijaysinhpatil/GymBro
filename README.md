@@ -12,10 +12,13 @@
 
 ## 📸 Screenshots
 
-| Home Page | Signup Page | Dashboard |
+| Landing Page | Signup Page | Dashboard |
 |-----------|-------------|-----------|
-| ![Home](![{1B9C92F4-2F9C-41B2-BD37-D414B815A9D9}](https://github.com/user-attachments/assets/786a064d-68e4-447d-b87c-f395fbb453ff)
-) | ![Signup](https://your-screenshot-url) | ![Dashboard](https://your-screenshot-url) |
+| ![Landing](!![image](https://github.com/user-attachments/assets/0a65e137-76df-45ed-9c84-4d69bfc6e304)
+)
+) | ![Signup](![image](https://github.com/user-attachments/assets/081735f5-c024-47df-b943-85c60361e8bf)
+) | ![Dashboard](![{1B9C92F4-2F9C-41B2-BD37-D414B815A9D9}](https://github.com/user-attachments/assets/4d0b60de-4a53-49bc-a45a-945f1a965f7a)
+) |
 
 ---
 
