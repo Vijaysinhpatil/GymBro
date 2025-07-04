@@ -14,7 +14,7 @@
 
 | Landing Page | Signup Page | Dashboard |
 |-----------|-------------|-----------|
- ![image](https://github.com/user-attachments/assets/0a65e137-76df-45ed-9c84-4d69bfc6e304)![image](https://github.com/user-attachments/assets/081735f5-c024-47df-b943-85c60361e8bf)![{1B9C92F4-2F9C-41B2-BD37-D414B815A9D9}](https://github.com/user-attachments/assets/4d0b60de-4a53-49bc-a45a-945f1a965f7a)
+ ![image](https://github.com/user-attachments/assets/0a65e137-76df-45ed-9c84-4d69bfc6e304) | ![image](https://github.com/user-attachments/assets/081735f5-c024-47df-b943-85c60361e8bf) | ![{1B9C92F4-2F9C-41B2-BD37-D414B815A9D9}](https://github.com/user-attachments/assets/4d0b60de-4a53-49bc-a45a-945f1a965f7a)
 
 ---
 
