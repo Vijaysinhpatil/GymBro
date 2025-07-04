@@ -1,0 +1,209 @@
+.gymbro-404-container {
+  background-color: #1A1A1A;
+  background-image: radial-gradient(circle, #FF1A1A 1px, transparent 1px);
+  background-size: 30px 30px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  font-family: 'Arial', sans-serif;
+  padding: 2rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+.gymbro-404-content {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Weight plate animation */
+.weight-plate {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(145deg, #3a3a3a, #2a2a2a);
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 2rem 0;
+  box-shadow: 
+    0 0 0 10px #FFD700,
+    0 0 30px rgba(255, 26, 26, 0.5);
+  font-size: 5rem;
+  font-weight: bold;
+  color: #FFD700;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  transform: translateY(0) rotate(calc(var(--shake) * 1deg));
+}
+
+.weight-plate.lifting {
+  animation: lift 2s ease-in-out infinite;
+}
+
+.weight-plate:hover {
+  transform: translateY(-5px) rotate(calc(var(--shake) * 2deg));
+}
+
+@keyframes lift {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-20px) rotate(5deg); }
+}
+
+.plate-hole {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: #1A1A1A;
+  border-radius: 50%;
+  border: 5px solid #FFD700;
+}
+
+.plate-bar {
+  position: absolute;
+  width: 250px;
+  height: 20px;
+  background: #FFD700;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+/* Text styles */
+.title {
+  font-size: 2.5rem;
+  color: #FF1A1A;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+/* Button styles */
+.btn-primary {
+  background: #FF1A1A;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border-radius: 50px;
+  cursor: pointer;
+  margin: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary:hover {
+  background: #FF0000;
+  transform: scale(1.05);
+}
+
+.btn-primary.pulse {
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(255, 26, 26, 0.7); }
+  70% { box-shadow: 0 0 0 15px rgba(255, 26, 26, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(255, 26, 26, 0); }
+}
+
+.btn-secondary {
+  background: transparent;
+  color: #FFD700;
+  border: 2px solid #FFD700;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 50px;
+  cursor: pointer;
+  margin: 10px;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 215, 0, 0.1);
+  transform: translateY(-3px);
+}
+
+/* Motivational quote */
+.motivational-quote {
+  font-style: italic;
+  margin-top: 2rem;
+  padding: 1rem;
+  border-left: 5px solid #FF1A1A;
+  background: rgba(255, 26, 26, 0.1);
+  border-radius: 0 10px 10px 0;
+}
+
+/* Spotter animation */
+.spotter {
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: spotterHelp 3s forwards;
+}
+
+.spotter-text {
+  color: #FF1A1A;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  animation: textPulse 0.5s infinite alternate;
+}
+
+.spotter-hands {
+  font-size: 3rem;
+  animation: handsWave 0.5s infinite alternate;
+}
+
+@keyframes spotterHelp {
+  0% { bottom: -50px; opacity: 0; }
+  20% { bottom: 20px; opacity: 1; }
+  80% { bottom: 20px; opacity: 1; }
+  100% { bottom: -50px; opacity: 0; }
+}
+
+@keyframes textPulse {
+  from { transform: scale(1); }
+  to { transform: scale(1.1); }
+}
+
+@keyframes handsWave {
+  from { transform: translateY(0); }
+  to { transform: translateY(-10px); }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .weight-plate {
+    width: 150px;
+    height: 150px;
+    font-size: 3.5rem;
+  }
+  
+  .plate-bar {
+    width: 180px;
+  }
+  
+  .title {
+    font-size: 2rem;
+  }
+  
+  .secondary-options {
+    display: flex;
+    flex-direction: column;
+  }
+}

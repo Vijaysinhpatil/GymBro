@@ -1,0 +1,271 @@
+/* Base Styles */
+.membership-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  color: #333;
+  font-family: 'Poppins', sans-serif;
+}
+
+.membership-hero {
+  text-align: center;
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #121212 0%, #1a1a1a 100%);
+  color: white;
+  border-radius: 15px;
+  margin-bottom: 3rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.membership-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.membership-hero p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Pricing Toggle */
+.pricing-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
+  font-weight: 600;
+}
+
+.toggle-switch {
+  width: 60px;
+  height: 30px;
+  background: #e0e0e0;
+  border-radius: 30px;
+  position: relative;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+  transition: all 0.3s;
+}
+
+.toggle-switch.yearly {
+  background: #FF5F00;
+  color: white;
+}
+
+.toggle-switch .toggle-knob {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background: white;
+  border-radius: 50%;
+  left: 3px;
+  transition: all 0.3s;
+}
+
+.toggle-switch.yearly .toggle-knob {
+  left: calc(100% - 27px);
+}
+
+/* Pricing Cards */
+.pricing-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.plan-card {
+  background: white;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: all 0.3s;
+  border: 1px solid #eee;
+}
+
+.plan-card.popular {
+  border: 2px solid #FF5F00;
+  transform: scale(1.05);
+}
+
+.popular-badge {
+  position: absolute;
+  top: -15px;
+  right: 20px;
+  background: #FF5F00;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.plan-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #121212;
+}
+
+.price {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #FF5F00;
+}
+
+.price small {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #666;
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+}
+
+.features li {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.features svg {
+  font-size: 1.2rem;
+}
+
+.feature-yes {
+  color: #4CAF50;
+}
+
+.feature-no {
+  color: #F44336;
+}
+
+.join-btn {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  background: #121212;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.join-btn:hover {
+  background: #333;
+  transform: translateY(-3px);
+}
+
+.popular-btn {
+  background: #FF5F00;
+}
+
+.popular-btn:hover {
+  background: #E05500;
+}
+
+/* Feature Table */
+.feature-table {
+  margin: 4rem 0;
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.feature-table h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #121212;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+th {
+  background: #121212;
+  color: white;
+  font-weight: 600;
+}
+
+tr:hover {
+  background: rgba(255, 95, 0, 0.05);
+}
+
+/* FAQ Section */
+.faq-section {
+  margin: 4rem 0;
+}
+
+.faq-section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #121212;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.faq-item {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq-item h3 {
+  color: #FF5F00;
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .membership-hero h1 {
+    font-size: 2rem;
+  }
+  
+  .pricing-cards {
+    grid-template-columns: 1fr;
+  }
+  
+  .plan-card.popular {
+    transform: none;
+  }
+  
+  table {
+    display: block;
+    overflow-x: auto;
+  }
+}

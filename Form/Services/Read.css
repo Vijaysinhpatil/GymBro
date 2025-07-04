@@ -1,0 +1,234 @@
+/* GymBro Admin Styles */
+.gymbro-admin-container {
+  padding: 20px;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+}
+
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #FF5F00, #FF8C00);
+  padding: 15px 25px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  color: white;
+  box-shadow: 0 4px 12px rgba(255, 95, 0, 0.2);
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.gym-icon {
+  font-size: 24px;
+}
+
+.header-right {
+  display: flex;
+  gap: 15px;
+}
+
+.dashboard-btn, .logout-btn, .add-member-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s;
+  white-space: nowrap;
+}
+
+.dashboard-btn {
+  background-color: #121212;
+  color: white;
+}
+
+.dashboard-btn:hover {
+  background-color: #333;
+}
+
+.logout-btn {
+  background-color: #d32f2f;
+  color: white;
+}
+
+.logout-btn:hover {
+  background-color: #b71c1c;
+}
+
+.table-container {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+}
+
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.add-member-btn {
+  background-color: #FF5F00;
+  color: white;
+  padding: 10px 20px;
+}
+
+.add-member-btn:hover {
+  background-color: #E05500;
+}
+
+.gymbro-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px;
+}
+
+.gymbro-table th, .gymbro-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.gymbro-table th {
+  background-color: #121212;
+  color: white;
+  font-weight: 600;
+}
+
+.gymbro-table tr:hover {
+  background-color: rgba(255, 95, 0, 0.05);
+}
+
+.membership-badge {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.membership-badge.basic {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.membership-badge.premium {
+  background-color: #2196F3;
+  color: white;
+}
+
+.membership-badge.vip {
+  background-color: #9C27B0;
+  color: white;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.edit-btn {
+  background-color: #FFC107;
+  color: #121212;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.8rem;
+}
+
+.edit-btn:hover {
+  background-color: #FFA000;
+}
+
+.delete-btn {
+  background-color: #F44336;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.8rem;
+}
+
+.delete-btn:hover {
+  background-color: #D32F2F;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .admin-header {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+  
+  .header-right {
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .table-header {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+  
+  .action-buttons {
+    flex-direction: row;
+    gap: 5px;
+  }
+
+  .gymbro-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .dashboard-btn, .logout-btn, .add-member-btn {
+    padding: 8px 12px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .admin-header {
+    padding: 15px;
+  }
+
+  .header-left h2 {
+    font-size: 1.2rem;
+  }
+
+  .gymbro-table th, 
+  .gymbro-table td {
+    padding: 8px 10px;
+    font-size: 0.85rem;
+  }
+
+  .edit-btn, 
+  .delete-btn {
+    padding: 5px 8px;
+  }
+}

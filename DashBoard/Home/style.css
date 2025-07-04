@@ -1,0 +1,247 @@
+/* src/components/Sidebar.css */
+
+.sidebar-container {
+  display: flex;
+  min-height: 100vh;
+  position: relative;
+}
+
+.sidebar {
+  background-color: #111;
+  color: white;
+  width: 200px;
+  transition: all 0.3s ease;
+  padding: 10px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1000;
+}
+
+.sidebar.closed {
+  width: 60px;
+}
+
+.sidebar.mobile {
+  position: fixed;
+  height: 100%;
+  z-index: 1000;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar.mobile.closed {
+  transform: translateX(-100%);
+  width: 200px;
+}
+
+.toggle-btn {
+  background: none;
+  border: none;
+  color: white;
+  margin-bottom: 20px;
+  margin-left: 13px;
+  cursor: pointer;
+  font-size: 20px;
+  display: block;
+}
+
+.mobile-toggle-btn {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background: none;
+  border: none;
+  color: #111;
+  font-size: 24px;
+  z-index: 999;
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 20px 10px;
+  padding: 10px;
+  text-decoration: none;
+  color: #f3f4f6;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  border-radius: 4px;
+}
+
+.menu-item:hover {
+  background-color: #333;
+  color: #facc15;
+}
+
+.menu-item.active {
+  background-color: #333;
+  color: #facc15;
+}
+
+.sidebar.closed .menu-item {
+  justify-content: center;
+  margin: 20px 0;
+  padding: 10px 0;
+}
+
+.sidebar.closed .menu-item span {
+  display: none;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #f3f4f6;
+  transition: all 0.3s ease;
+  min-height: 100vh;
+}
+
+.main-content.blur {
+  filter: blur(2px);
+  pointer-events: none;
+}
+
+/* Feature Cards */
+.feature-card {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.feature-title {
+  color: #2c3e50;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.feature-icon {
+  color: #3498db;
+}
+
+.feature-description {
+  color: #7f8c8d;
+  margin-bottom: 20px;
+}
+
+/* Trainer Section */
+.trainer-card {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.trainer-images {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.trainer-img {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.trainer-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Services Section */
+.services-card {
+  background: linear-gradient(135deg, #e0f7fa 0%, #80deea 100%);
+}
+
+.service-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.service-item {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Membership Section */
+.membership-card {
+  background: linear-gradient(135deg, #e8f5e9 0%, #a5d6a7 100%);
+}
+
+.membership-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.membership-tier {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.membership-tier h4 {
+  color: #2e7d32;
+  margin-bottom: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .sidebar:not(.mobile) {
+    display: none;
+  }
+  
+  .sidebar.open {
+    width: 200px;
+    transform: translateX(0);
+  }
+  
+  .main-content {
+    padding-top: 60px;
+  }
+  
+  .feature-card {
+    padding: 20px;
+  }
+}
+
+@media (min-width: 769px) {
+  .mobile-toggle-btn {
+    display: none;
+  }
+  
+  .sidebar.mobile {
+    position: relative;
+    box-shadow: none;
+  }
+  
+  .sidebar.mobile.closed {
+    transform: none;
+    width: 60px;
+  }
+}
