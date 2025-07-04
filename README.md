@@ -1,12 +1,57 @@
-# React + Vite
+# 💪 GymBro - Your Personal Fitness Partner
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![GymBro Banner](https://your-banner-url-if-any.com)
 
-Currently, two official plugins are available:
+> A sleek and modern fitness website built with **React.js**, designed for gym enthusiasts to explore services, connect with trainers, and submit membership forms – all with smooth UI and intuitive UX.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌐 Live Demo
 
-## Expanding the ESLint configuration
+👉 [Click here to view GymBro live](https://gymbrovijay.netlify.app/)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📸 Screenshots
+
+| Home Page | Signup Page | Dashboard |
+|-----------|-------------|-----------|
+| ![Home](https://your-screenshot-url) | ![Signup](https://your-screenshot-url) | ![Dashboard](https://your-screenshot-url) |
+
+---
+
+## 🚀 Features
+
+- 🔐 User Registration/Login
+- 🧾 Membership Form with Validation
+- 🧑‍🏫 Trainer Information Section
+- 📋 Subscription Plans
+- 🎯 Clean and Responsive Dashboard
+- 💬 Toast Notifications
+- 🎨 Animated UI using Framer Motion
+
+---
+
+## 🛠️ Tech Stack
+
+| Tech        | Description                    |
+|-------------|--------------------------------|
+| React.js    | Frontend framework             |
+| Formik + Yup | Form handling & validation    |
+| CSS3 / Bootstrap | Styling & layout         |
+| Toastify    | Toast notifications            |
+| Framer Motion | Animations & transitions     |
+| Netlify     | Deployment                     |
+
+---
+
+## 🧭 Project Structure
+
+/gymbro
+├── /public
+├── /src
+│ ├── /components
+│ ├── /Form
+│ ├── /Pages
+│ ├── /Services
+│ ├── App.jsx
+│ ├── index.js
+├── package.json
